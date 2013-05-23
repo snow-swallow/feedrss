@@ -1,16 +1,15 @@
 package controllers;
 
-import play.*;
-import play.mvc.*;
+import cn.bran.play.JapidController;
 
-import java.util.*;
+public class Application extends JapidController {
 
-import models.*;
+	public static void index() {
+		render();
+	}
 
-public class Application extends Controller {
-
-    public static void index() {
-        render();
-    }
+	public static void home() {
+		renderJapid();
+	}
 
 }
